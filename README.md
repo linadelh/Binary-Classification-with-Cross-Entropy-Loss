@@ -46,7 +46,7 @@ In this experiment, we found an "optimal" **$\beta_1 \approx 1.5$** by fixing ot
 <img src="project/visualisation/beta1_testing_optimality.png" width="400" alt="beta1_test">
 
 **Key Takeaway:** The found $\beta_1$ represents a **local optimum** Because we only tuned one parameter while keeping weights fixed the model lacks the flexibility to fit all data points perfectly.
-**Next Steps:** To reach the Global Minimum of the cost function a more robust approach is required: training all weights and biases simultaneously using the **Gradient Descent** algorithm.
+**SO** To reach the Global Minimum of the cost function a more robust approach is required: training all weights and biases simultaneously using the **Gradient Descent** algorithm.
 
    
    
