@@ -27,11 +27,15 @@ The core of this project is finding the optimal $\beta_1$. We use the following 
 
 **- Log-Likelihood:** Because multiplying many probabilities results in numbers too small for computers to handle (underflow) we apply a Logarithm to turn products into sums.
 **- Negative Log-Likelihood (NLL):** We multiply by $-1$ because most optimization algorithms are designed to minimize error rather than maximize success
+
 <img src="project/visualisation/Nll.png" width="400" alt="NLL Plot">
+
 
 ## **Conclusion & Limitations**
 In this experiment, we found an "optimal" **$\beta_1 \approx 1.5$** by fixing other parameters and searching for the best bias. However, visualizing the results showed a suboptimal global fit
+
 <img src="project/visualisation/beta1_testing_optimality.png" width="400" alt="beta1_test">
+
 **Key Takeaway:** The found $\beta_1$ represents a **local optimum** Because we only tuned one parameter while keeping weights fixed the model lacks the flexibility to fit all data points perfectly.
 **Next Steps:** To reach the Global Minimum of the cost function a more robust approach is required: training all weights and biases simultaneously using the **Gradient Descent** algorithm.
 
