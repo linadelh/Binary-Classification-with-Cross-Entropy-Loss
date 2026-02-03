@@ -9,11 +9,13 @@ The model consists of a simple neural network with:
 
 ## **how it works**
 **1. Data Processing :** We utilize a training set **$(x_{train}, y_{train})$**, where **$x$** represents the input and **$y$** represents the ground truth label (0 or 1).
+
 **2. The Hidden Layer (Forward Pass) :**
    Each input is passed to the hidden layer where:
    - We compute the linear transformation: **$z = (x \cdot \omega_0) + \text{bias}_0$**.
    - We apply the ReLU (Rectified Linear Unit) activation function: **$f(z) = \max(0, z)$**
    - Purpose: ReLU introduces non-linearity allowing the network to decide whether a neuron should be (activate) or remain inactive.
+     
 **3. Output Generation :** The outputs from the hidden layer are multiplied by weight **$\omega_1$** and added to **$\beta_1$** (the bias) The final result **$f(x)$** is passed through the Sigmoid Function:
  **$$\sigma(f(x)) = \frac{1}{1 + e^{-f(x)}}$$** , This maps any real-valued number into a probability between 0 and 1
 <img src="project/visualisation/model.png" width="400" alt="Neural Network Architecture"> 
