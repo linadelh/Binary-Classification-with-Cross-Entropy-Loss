@@ -5,7 +5,7 @@ The goal is to study the impact of one parameter (bias β₁) on a model and und
 ## **Network Architecture**
 The model consists of a simple neural network with:
 
-<img src="project/visualisation/output.png" width="400" alt="NetworkArchitecture"> 
+<img src="project/visualisation/NetworkArchitecture.png" width="400" alt="NetworkArchitecture"> 
 
 - **Input Layer:** 1 input node.
 - **Hidden Layer:** Multiple neurons using the ReLU activation function.
@@ -23,7 +23,7 @@ The model consists of a simple neural network with:
 **3. Output Generation :** The outputs from the hidden layer are multiplied by weight **$\omega_1$** and added to **$\beta_1$** (the bias) The final result **$f(x)$** is passed through the Sigmoid Function:
  **$$\sigma(f(x)) = \frac{1}{1 + e^{-f(x)}}$$** , This maps any real-valued number into a probability between 0 and 1
  
-<img src="project/visualisation/model.png" width="400" alt="Neural Network Architecture"> 
+<img src="project/visualisation/output.png" width="400" alt="model"> 
 
 ## **Optimization & Likelihood**
 We use the following statistical approach:
