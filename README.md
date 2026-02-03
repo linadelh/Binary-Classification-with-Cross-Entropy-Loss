@@ -1,5 +1,5 @@
 # **Binary Classification with Cross-Entropy**
-This project is an introduction to Machine Learning through a simple optimization experiment.
+This project is an introduction to Machine Learning through a simple **optimization experiment* , 
 The goal is to study the impact of one parameter (bias β₁) on a model and understand if adjusting only one parameter can improve performance
 
 ## **Network Architecture**
