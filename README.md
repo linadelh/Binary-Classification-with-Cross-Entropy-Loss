@@ -27,7 +27,7 @@ We use the following statistical approach:
 
 **- Bernoulli Distribution:** Since the output is binary, we model the probability using $P(y|\hat{y}) = \hat{y}^y \cdot (1-\hat{y})^{(1-y)}$. 
 
-**-Finding the Optimal Bias:** To find the best value, we take a range of $\beta_1$ values and repeat the perceptron process. For each value in the range, a model is created and evaluated against the entire training dataset. We then calculate the **Likelihood and NLL** for each model and plot them against the range of $\beta_1$ values.
+**- Finding the Optimal Bias:** To find the best value, we take a range of $\beta_1$ values and repeat the perceptron process. For each value in the range, a model is created and evaluated against the entire training dataset. We then calculate the **Likelihood and NLL** for each model and plot them against the range of $\beta_1$ values.
 
 **- Likelihood Function:** We calculate the product of these probabilities for all data points. The highest point on this graph represents our optimal $\beta_1$.
 
