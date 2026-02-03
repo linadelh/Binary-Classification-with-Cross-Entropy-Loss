@@ -26,13 +26,15 @@ The core of this project is finding the optimal $\beta_1$. We use the following 
 
 **- Bernoulli Distribution:** Since the output is binary, we model the probability using $P(y|\hat{y}) = \hat{y}^y \cdot (1-\hat{y})^{(1-y)}$. 
 
-**- Likelihood Function:** We calculate the product of these probabilities for all data points.
+**-Finding the Optimal Bias:** To find the best value, we take a range of $\beta_1$ values and repeat the perceptron process. For each value in the range, a model is created and evaluated against the entire training dataset. We then calculate the **Likelihood and NLL** for each model and plot them against the range of $\beta_1$ values.
+
+**- Likelihood Function:** We calculate the product of these probabilities for all data points. The highest point on this graph represents our optimal $\beta_1$.
 
 <img src="project/visualisation/likelhood.png" width="400" alt="Likelihood Plot">
 
 **- Log-Likelihood:** Because multiplying many probabilities results in numbers too small for computers to handle (underflow) we apply a Logarithm to turn products into sums.
 
-**- Negative Log-Likelihood (NLL):** We multiply by $-1$ because most optimization algorithms are designed to minimize error rather than maximize success
+**- Negative Log-Likelihood (NLL):** We multiply by $-1$ because most optimization algorithms are designed to minimize error rather than maximize success , The minimum of the NLL curve corresponds exactly to the maximum of the Likelihood curve 
 
 <img src="project/visualisation/Nll.png" width="400" alt="NLL Plot">
 
