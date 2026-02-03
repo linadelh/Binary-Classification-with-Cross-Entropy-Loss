@@ -23,7 +23,7 @@ The model consists of a simple neural network with:
 <img src="project/visualisation/model.png" width="400" alt="Neural Network Architecture"> 
 
 ## **Optimization & Likelihood**
-The core of this project is finding the optimal $\beta_1$. We use the following statistical approach:
+We use the following statistical approach:
 
 **- Bernoulli Distribution:** Since the output is binary, we model the probability using $P(y|\hat{y}) = \hat{y}^y \cdot (1-\hat{y})^{(1-y)}$. 
 
