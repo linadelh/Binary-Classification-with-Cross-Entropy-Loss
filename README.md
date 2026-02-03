@@ -18,6 +18,7 @@ The model consists of a simple neural network with:
      
 **3. Output Generation :** The outputs from the hidden layer are multiplied by weight **$\omega_1$** and added to **$\beta_1$** (the bias) The final result **$f(x)$** is passed through the Sigmoid Function:
  **$$\sigma(f(x)) = \frac{1}{1 + e^{-f(x)}}$$** , This maps any real-valued number into a probability between 0 and 1
+ 
 <img src="project/visualisation/model.png" width="400" alt="Neural Network Architecture"> 
 
 ## **Optimization & Likelihood**
