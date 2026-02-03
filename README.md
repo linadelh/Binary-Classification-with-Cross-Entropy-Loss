@@ -48,12 +48,7 @@ In this experiment, we found an "optimal" **$\beta_1 \approx 1.5$** by fixing ot
 
 <img src="project/visualisation/beta1_testing_optimality.png" width="400" alt="beta1_test">
 
-| Key Point | Explanation |
-|-----------|-------------|
-| Local Optimum | The found β₁ represents a local optimum because only one parameter was tuned while keeping weights fixed. |
-| Limitation | The model lacks the flexibility to fit all data points perfectly. |
-| Solution | To reach the global minimum of the cost function all weights and biases must be trained simultaneously |
-
+The found β₁ represents a **local optimum** because only one parameter was tuned while keeping weights fixed so the model cannot fit all data points perfectly reaching the global minimum **requires training all weights and biases simultaneously**
 
    
    
