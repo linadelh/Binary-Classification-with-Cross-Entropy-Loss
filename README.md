@@ -5,7 +5,7 @@ The goal is to study the impact of one parameter (bias β₁) on a model and und
 ## **Network Architecture**
 The model consists of a simple neural network with:
 
-<img src="project/visualisation/NetworkArchitecture.png" width="400" alt="NetworkArchitecture"> 
+<img src="project/visualisation/output.png" width="400" alt="NetworkArchitecture"> 
 
 - **Input Layer:** 1 input node.
 - **Hidden Layer:** Multiple neurons using the ReLU activation function.
@@ -46,7 +46,7 @@ We use the following statistical approach:
 ## **Conclusion & Limitations**
 In this experiment, we found an "optimal" **$\beta_1 \approx 1.5$** by fixing other parameters and searching for the best bias. However, visualizing the results showed a suboptimal global fit
 
-<img src="project/visualisation/beta1_testing_optimality.png" width="400" alt="beta1_test">
+<img src="project/visualisation/outputbeta1.png" width="400" alt="beta1_test">
 
 The found β₁ represents a **local optimum** because only one parameter was tuned while keeping weights fixed so the model cannot fit all data points perfectly reaching the global minimum **requires training all weights and biases simultaneously**
 
