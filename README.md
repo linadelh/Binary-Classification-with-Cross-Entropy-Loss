@@ -1,5 +1,6 @@
 # **Binary Classification with Cross-Entropy**
-This project serves as an introduction to Machine Learning by training a basic neural network to perform binary classification. The goal is to predict whether a given input belongs to Class 0 or Class 1.
+This project is an introduction to Machine Learning through a simple optimization experiment.
+The goal is to study the impact of one parameter (bias β₁) on a model and understand if adjusting only one parameter can improve performance
 
 ## **Network Architecture**
 The model consists of a simple neural network with:
