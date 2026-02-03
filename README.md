@@ -22,7 +22,9 @@ The model consists of a simple neural network with:
 The core of this project is finding the optimal $\beta_1$. We use the following statistical approach:
 **- Bernoulli Distribution:** Since the output is binary, we model the probability using $P(y|\hat{y}) = \hat{y}^y \cdot (1-\hat{y})^{(1-y)}$.
 **- Likelihood Function:** We calculate the product of these probabilities for all data points.
+
 <img src="project/visualisation/likelhood.png" width="400" alt="Likelihood Plot">
+
 **- Log-Likelihood:** Because multiplying many probabilities results in numbers too small for computers to handle (underflow) we apply a Logarithm to turn products into sums.
 **- Negative Log-Likelihood (NLL):** We multiply by $-1$ because most optimization algorithms are designed to minimize error rather than maximize success
 <img src="project/visualisation/Nll.png" width="400" alt="NLL Plot">
