@@ -4,6 +4,9 @@ The goal is to study the impact of one parameter (bias β₁) on a model and und
 
 ## **Network Architecture**
 The model consists of a simple neural network with:
+
+<img src="project/visualisation/NetworkArchitecture.png" width="400" alt="NetworkArchitecture"> 
+
 - **Input Layer:** 1 input node.
 - **Hidden Layer:** Multiple neurons using the ReLU activation function.
 - **Output Layer:** 1 output node using the Sigmoid activation function for binary probability.
